@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <style>
+    .trunk { stroke: #a0aec0; stroke-width: 6; }
+    .edge { stroke: #a0aec0; stroke-width: 3; }
+    .node { fill: #4fd1c5; stroke: #2c7a7b; stroke-width: 2; }
+  </style>
+
+  <g id="organic-network-tree">
+    <!-- trunk -->
+    <line class="trunk" x1="40" y1="160" x2="90" y2="110" />
+
+    <!-- branches asymmetrically growing -->
+    <line class="edge" x1="90" y1="110" x2="75" y2="60" />
+    <line class="edge" x1="90" y1="110" x2="130" y2="95" />
+    
+    <line class="edge" x1="75" y1="60" x2="95" y2="30" />
+    
+    <line class="edge" x1="130" y1="95" x2="115" y2="55" />
+    <line class="edge" x1="130" y1="95" x2="165" y2="80" />
+
+    <!-- nodes, varied sizes, organic feel -->
+    <circle class="node" cx="40" cy="160" r="9" /> <!-- root -->
+    <circle class="node" cx="90" cy="110" r="8" />
+    <circle class="node" cx="130" cy="95" r="8" />
+    <circle class="node" cx="75" cy="60" r="7" />
+    <circle class="node" cx="115" cy="55" r="6" />
+    <circle class="node" cx="95" cy="30" r="5" /> <!-- leafs -->
+    <circle class="node" cx="165" cy="80" r="5" />
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 75">
+  <!-- notes: 
+    * spacing b/w letters is controlled by `transform=translate(x, y)` property on each letter group
+    * overall size is controlled by `viewBox` attribute on the main <svg> element
+   -->
+
+  <style>
+    .triangle {
+      /* fill: rgba(255, 255, 0, 0.24); /* NOTE: Light blue to fill for simplexes will not work with slate background. */
+      fill: rgba(79, 209, 197, 0.15); /* Semi-transparent teal */
+    }
+    .edge {
+      /* NOTE: replaced edge colors */
+      stroke: #a0aec0; /* Light gray */
+      stroke-width: 4;
+      transition: all 0.3s;
+    }
+    .node {
+      /* NOTE: replaced node colors */
+      fill: #4fd1c5; /* teal */
+      stroke: #2c7a7b; /* darker teal for stroke */
+      stroke-width: 2;
+      transition: all 0.3s;
+    }
+  </style>
+  
+  <!-- Letter S -->
+  <g id="span-s">
+    <polygon class="triangle" points="15,12 45,12 15,26"/>
+    <polygon class="triangle" points="15,26 45,40 15,40"/>
+    <polygon class="triangle" points="45,40 45,54 15,40"/>
+    <polygon class="triangle" points="45,54 45,68 15,68"/>
+    <line class="edge" x1="15" y1="12" x2="45" y2="12"/>
+    <line class="edge" x1="15" y1="12" x2="15" y2="26"/>
+    <line class="edge" x1="15" y1="26" x2="15" y2="40"/>
+    <line class="edge" x1="15" y1="40" x2="45" y2="40"/>
+    <line class="edge" x1="45" y1="40" x2="45" y2="54"/>
+    <line class="edge" x1="45" y1="54" x2="45" y2="68"/>
+    <line class="edge" x1="45" y1="68" x2="15" y2="68"/>
+    <circle class="node" cx="15" cy="12" r="5"/>
+    <circle class="node" cx="45" cy="12" r="5"/>
+    <circle class="node" cx="15" cy="26" r="5"/>
+    <circle class="node" cx="15" cy="40" r="5"/>
+    <circle class="node" cx="45" cy="40" r="5"/>
+    <circle class="node" cx="45" cy="54" r="5"/>
+    <circle class="node" cx="45" cy="68" r="5"/>
+    <circle class="node" cx="15" cy="68" r="5"/>
+  </g>
+
+  <!-- Letter P -->
+  <g id="span-p" transform="translate(55, 0)">
+    <polygon class="triangle" points="12,12 30,12 35,20 35,30 30,38 12,38"/>
+    <line class="edge" x1="12" y1="12" x2="12" y2="68"/>
+    <line class="edge" x1="12" y1="12" x2="30" y2="12"/>
+    <line class="edge" x1="30" y1="12" x2="35" y2="20"/>
+    <line class="edge" x1="35" y1="20" x2="35" y2="30"/>
+    <line class="edge" x1="35" y1="30" x2="30" y2="38"/>
+    <line class="edge" x1="30" y1="38" x2="12" y2="38"/>
+    <circle class="node" cx="12" cy="12" r="5"/>
+    <circle class="node" cx="30" cy="12" r="5"/>
+    <circle class="node" cx="35" cy="20" r="5"/>
+    <circle class="node" cx="35" cy="30" r="5"/>
+    <circle class="node" cx="30" cy="38" r="5"/>
+    <circle class="node" cx="12" cy="38" r="5"/>
+    <circle class="node" cx="12" cy="68" r="5"/>
+  </g>
+
+  <!-- Letter A -->
+  <g id="span-a" transform="translate(90, 0)">
+    <polygon class="triangle" points="30,12 22,42 38,42"/>
+    <line class="edge" x1="30" y1="12" x2="22" y2="42"/>
+    <line class="edge" x1="30" y1="12" x2="38" y2="42"/>
+    <line class="edge" x1="22" y1="42" x2="12" y2="68"/>
+    <line class="edge" x1="38" y1="42" x2="48" y2="68"/>
+    <line class="edge" x1="22" y1="42" x2="38" y2="42"/>
+    <circle class="node" cx="30" cy="12" r="5"/>
+    <circle class="node" cx="22" cy="42" r="5"/>
+    <circle class="node" cx="38" cy="42" r="5"/>
+    <circle class="node" cx="12" cy="68" r="5"/>
+    <circle class="node" cx="48" cy="68" r="5"/>
+  </g>
+
+  <!-- Letter N -->
+  <g id="span-n" transform="translate(145, 0)">
+    <polygon class="triangle" points="12,12 30,25 48,68 30,55"/>
+    <line class="edge" x1="12" y1="12" x2="12" y2="68"/>
+    <line class="edge" x1="48" y1="12" x2="48" y2="68"/>
+    <line class="edge" x1="30" y1="55" x2="12" y2="12"/>
+    <line class="edge" x1="30" y1="25" x2="48" y2="68"/>
+    <line class="edge" x1="30" y1="55" x2="48" y2="68"/>
+    <line class="edge" x1="30" y1="25" x2="12" y2="12"/>
+    <circle class="node" cx="12" cy="12" r="5"/>
+    <circle class="node" cx="48" cy="12" r="5"/>
+    <circle class="node" cx="12" cy="68" r="5"/>
+    <circle class="node" cx="48" cy="68" r="5"/>
+    <circle class="node" cx="30" cy="25" r="5"/>
+    <circle class="node" cx="30" cy="55" r="5"/>
+  </g>
+</svg>
